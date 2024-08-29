@@ -1,0 +1,97 @@
+:root {
+    --background-color: #1F2937;
+    --h1-color: #F9FAFB;
+    --span-color: #4adf86;
+    --h2-color: #D5D4D8;
+    --button-color: #10B981;
+    --hr-color: #2F3E53;
+    --password-text-color: #55F991;
+}
+
+[theme='light'] {
+    --background-color: #ECFDF5;
+    --h1-color: #2B283A;
+    --span-color: #10B981;
+    --h2-color: #6B7280;
+    --button-color: #273549;
+    --hr-color: #D5D4D8;
+    --password-text-color: #5DEF92;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1C1C1C;
+    font-family: "Karla", sans-serif;
+}
+
+#theme-btn {
+    margin-top: auto;
+    background-color: var(--button-color);
+}
+
+#theme-btn svg {
+    display: block;
+    margin: auto;
+}
+
+main {
+    padding: 115px 52px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    color: var(--h1-color);
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+span {
+    color: var(--span-color);
+}
+
+h2 {
+    color: var(--h2-color);
+    font-size: 2rem;
+    margin-top: -8px;
+    font-weight: 400;
+}
+
+button {
+    margin-top: 51px;
+    padding: 9px 17px;
+    background-color: #10B981;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    font-size: 1.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    margin-top: 35px;
+    border: 1px solid var(--hr-color);
+}
+
+#passwords-container {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    margin-top: -20px;
+}
+
+#passwords-container button {
+    width: 100%;
+    background-color: #273549;
+    padding: 18px;
+    color: var(--password-text-color);
+}
